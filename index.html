@@ -454,6 +454,10 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
+
+    <!-- Google Maps JavaScript -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmW0N4DxQbC1G0I1L9Um82FaeJbz5POOU&callback=initMap"></script>
+
 	<script>
 	  function initMap() {
 		var myLatLng = {lat: -6.897702, lng: 107.635727};
@@ -473,12 +477,7 @@
 	    $this.html(event.strftime('%D Hari %H:%M:%S'));
 	  });
 	});
-	</script>
-	<script async defer
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmW0N4DxQbC1G0I1L9Um82FaeJbz5POOU&callback=initMap">
-	</script>
 	
-	<script>
 	$(document).ready(function(){
 		$('[data-toggle="tooltip"]').tooltip({arrows : false});   
 	});
