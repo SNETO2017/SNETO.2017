@@ -313,7 +313,7 @@
 
     <footer class="footer">
 	<div class="container">
-		<span style="color: #ddd; font-size: 80%;text-align: right;">Copyright &copy; <span id="nowyear"></span> &bullet; Seminar Nasional Energi Telekomunikasi Dan Otomasi(SNETO) - ITENAS</span> <span style="color: #aaa; font-size: 70%;text-align: right;">other content is copyright for their respective owner</span>
+		<span style="color: #aaa; font-size: 80%;text-align: right;">Copyright &copy; <span id="nowyear"></span> &bullet; Seminar Nasional Energi Telekomunikasi Dan Otomasi(SNETO) - ITENAS</span> <span style="color: #ccc; font-size: 70%;text-align: right;">other content is copyright for their respective owner</span>
 	</div>
     </footer>
 	
@@ -462,7 +462,7 @@
 	$(document).ready(function(){
 		$('[data-toggle="tooltip"]').tooltip({arrows : false});
 		var dy = new Date();
-		var ny = d.getFullYear();
+		var ny = dy.getFullYear();
 		document.getElementById("nowyear").innerHTML = ny;
 	});
 	
