@@ -40,6 +40,7 @@
 		height: 150px;
 		clear:both;
 		padding-top:20px;
+		width: 100%;
 	}
     </style>
 	
@@ -312,7 +313,7 @@
 
     <footer class="footer">
 	<div class="container">
-		<p class="text-muted">Copyright &copy; <span id="nowyear"></span> &bullet; Seminar Nasional Energi Telekomunikasi Dan Otomasi(SNETO) - ITENAS <span style="color: #aaa; font-size: 70%;text-align: right;">other content is copyright for their respective owner</span></p>
+		<span style="color: #ddd; font-size: 80%;text-align: right;">Copyright &copy; <span id="nowyear"></span> &bullet; Seminar Nasional Energi Telekomunikasi Dan Otomasi(SNETO) - ITENAS</span> <span style="color: #aaa; font-size: 70%;text-align: right;">other content is copyright for their respective owner</span>
 	</div>
     </footer>
 	
@@ -460,11 +461,10 @@
 	
 	$(document).ready(function(){
 		$('[data-toggle="tooltip"]').tooltip({arrows : false});
+		var dy = new Date();
+		var ny = d.getFullYear();
+		document.getElementById("nowyear").innerHTML = ny;
 	});
-	
-	var dy = new Date();
-	var ny = d.getFullYear();
-	document.getElementById("nowyear").innerHTML = ny;
 	
 	/* Google Analytics */	
  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
