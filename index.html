@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Seminar Nasional Energi Telekomunikasi dan Otomasi pembahasan eksploitasi dan optimalisasi Energi Baru seperti Air, Udara, dan Nuklir">
     <meta name="author" content="Maunklana(Asep Maulana Nuriman) as Maung &amp; Ganteng(Muhammad Arif Yahdillaah) as Serigala">
+    <meta name="keywords" content="SNETO, SNETO 2017, Seminar ITENAS 2017, ITENAS SNETO, Otomasi">
 
-    <title>SNETO 2017 - ITENAS</title>
+    <title>Seminar Nasional Energi Telekomunikasi dan Otomasi 2017 - ITENAS</title>
 	
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
@@ -461,18 +462,6 @@
     <script src="js/creative.min.js"></script>
 
 	<script>
-	  function initMap() {
-		var myLatLng = {lat: -6.897702, lng: 107.635727};
-		var map = new google.maps.Map(document.getElementById('map-lokasi-acara'), {
-		  zoom: 17,
-		  center: myLatLng
-		});
-		var marker = new google.maps.Marker({
-		  position: myLatLng,
-		  map: map,
-		  title: 'SNETO 2017'
-		});
-	  }
 	$('[data-countdown]').each(function() {
 	  var $this = $(this), finalDate = $(this).data('countdown');
 	  $this.countdown(finalDate, function(event) {
@@ -481,7 +470,19 @@
 	});
 	
 	$(document).ready(function(){
-		$('[data-toggle="tooltip"]').tooltip({arrows : false});   
+		$('[data-toggle="tooltip"]').tooltip({arrows : false});
+		function initMap() {
+			var myLatLng = {lat: -6.897702, lng: 107.635727};
+			var map = new google.maps.Map(document.getElementById('map-lokasi-acara'), {
+			  zoom: 17,
+			  center: myLatLng
+			});
+			var marker = new google.maps.Marker({
+			  position: myLatLng,
+			  map: map,
+			  title: 'SNETO 2017'
+			});
+		  }
 	});
 	</script>
 
