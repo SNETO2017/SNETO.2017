@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Seminar Nasional Energi Telekomunikasi dan Otomasi pembahasan eksploitasi dan optimalisasi Energi Baru seperti Air, Udara, dan Nuklir">
+    <meta name="description" content="Seminar Nasional Energi Telekomunikasi dan Otomasi(SNETO) pembahasan tentang eksploitasi dan optimalisasi Energi Baru seperti Air, Udara, dan Nuklir">
     <meta name="author" content="Maunklana(Asep Maulana Nuriman) as Maung &amp; Ganteng(Muhammad Arif Yahdillaah) as Serigala">
     <meta name="keywords" content="SNETO, SNETO 2017, Seminar ITENAS 2017, ITENAS SNETO, Otomasi">
 
-    <title>Seminar Nasional Energi Telekomunikasi dan Otomasi 2017 - ITENAS</title>
+    <title>Seminar Nasional Energi Telekomunikasi dan Otomasi(SNETO) 2017 - ITENAS</title>
 	
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
@@ -22,23 +22,25 @@
     <meta name="theme-color" content="#ffffff">
     
     <style>
-		.color-white{
-			color:rgba(255,255,255,.7) !important;
-			text-decoration: none !important;
-		}
-		.no-as-fuck{
-			text-decoration: none !important;
-			background-color: none !important;
-		}
-		.force-link{cursor: pointer;}
-		/*#map-lokasi-acara {
-			height: 500px;
-			min-width: 700px;
-			width: 100%;
-		}*/
-		#map_container{
-		  position: relative;
-		}
+	.color-white{
+		color:rgba(255,255,255,.7) !important;
+		text-decoration: none !important;
+	}
+	.no-as-fuck{
+		text-decoration: none !important;
+		background-color: none !important;
+	}
+	.force-link{cursor: pointer;}
+	#map_container{
+		position: relative;
+	}
+	.footer {
+		position: relative;
+		margin-top: -150px; /* negative value of footer height */
+		height: 150px;
+		clear:both;
+		padding-top:20px;
+	}
     </style>
 	
     <!-- Bootstrap Core CSS -->
@@ -104,7 +106,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Seminar Nasional Energi Telekomunikasi Dan Otomasi 2017</h1>
+                <h1 id="homeHeading">Seminar Nasional Energi Telekomunikasi Dan Otomasi(SNETO) 2017</h1>
                 <hr>
                 <p>Bertemakan Tentang Perkembangan Teknologi Sistem Otomasi dan Telekomunikasi untuk Menunjang Pembangunan Energi Baru</p>
                 <a href="#tentang" class="btn btn-primary btn-xl page-scroll">Mau tahu lebih lanjut?</a>
@@ -238,7 +240,7 @@
             <div class="row">
 			
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Korespodensi</h2>
+                    <h2 class="section-heading">Korespodensi SNETO 2017</h2>
                     <hr class="primary">
                      <address>
 			     Panitia SNETO 2017 Jurusan Teknik Elektro ITENAS Bandung<br/>
@@ -307,7 +309,12 @@
             </div>
         </div>
     </section>
-	
+
+    <footer class="footer">
+	<div class="container">
+		<p class="text-muted">Copyright &copy; <span id="nowyear"></span> &bullet; Seminar Nasional Energi Telekomunikasi Dan Otomasi - ITENAS <span style="color: #aaa; font-size: 70%;text-align: right;">other content is copyright for their respective owner</span></p>
+	</div>
+    </footer>
 	
 	<!-- Ini Adalah Popup Inline gan -->
 	
@@ -455,6 +462,10 @@
 		$('[data-toggle="tooltip"]').tooltip({arrows : false});
 	});
 	
+	var dy = new Date();
+	var ny = d.getFullYear();
+	document.getElementById("nowyear").innerHTML = ny;
+	
 	/* Google Analytics */	
  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -463,8 +474,10 @@
 
   	ga('create', 'UA-98094942-1', 'auto');
  	ga('send', 'pageview');
+		
+	/* diracik oleh Asep Maulana Nuriman */
 	</script>
 
 </body>
-<!-- diracik oleh Asep Maulana Nuriman -->
+
 </html>
